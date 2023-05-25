@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "weather-station"
+version = "0.1.0"
+description = "A raspberry pi project that collects weather sensor data using the Sense Hat sensor."
+authors = ["Valter Wagner Zethrin <valter.wagner.zethrin@ri.se>"]
+readme = "README.md"
+packages = [{include = "weather_station"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
