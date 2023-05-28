@@ -5,6 +5,14 @@ import os
 
 
 def get_connection():
+    """Returns a connection to the database
+
+    The database connection parameters are configured in the project root .env
+    file.
+
+    Returns:
+        psycopg2.connection: Database connection
+    """
     load_dotenv(Path(__file__).parent.parent.parent.parent / ".env")
 
     db_host = os.getenv("DB_HOST")
