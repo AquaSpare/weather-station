@@ -8,7 +8,13 @@ packages = [{include = "weather_station"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+apscheduler = "^3.10.1"
+psycopg2-binary = "^2.9.6"
+python-dotenv = "^1.0.0"
 
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
