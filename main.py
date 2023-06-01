@@ -2,14 +2,14 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 
 def print_hi():
-    print('Hi')
+    print("Hi")
 
 
 def main():
     scheduler = BackgroundScheduler()
     scheduler.start()
 
-    scheduler.add_job(print_hi, 'interval', minutes=1)
+    scheduler.add_job(print_hi, "interval", minutes=1)
 
     try:
         while True:
